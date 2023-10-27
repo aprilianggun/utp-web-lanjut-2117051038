@@ -22,16 +22,24 @@
                 <input type="text" name="npm" id="disabledTextInput" class="form-control" placeholder="Masukan NPM Yang Valid">
             </div>
 
-            <div class="mb-3">
+            <!-- <div class="mb-3">
                 <label for="disabledTextInput" class="form-label">Kelas</label>
                 <input type="text" name="kelas" id="disabledTextInput" class="form-control" placeholder="Masukan Kelas">
-            </div>
-            <!-- <div class="mb-3">
-                <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                <select id="disabledSelect" class="form-select">
-                    <option>Disabled select</option>
-                </select>
             </div> -->
+            <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                <select name = "kelas" id="id_kelas" class="form-select">
+                    <?php
+                    foreach ($kelas as $item) {
+                    ?>
+                        <option value="<?= $item['id'] ?>">
+                        <?= $item['nama_kelas'] ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
+                </select>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
