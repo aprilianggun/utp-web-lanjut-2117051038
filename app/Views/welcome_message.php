@@ -220,7 +220,7 @@
 
     <div class="heroe">
 
-        <h1>Aprilia Anggun Sari Rahmawati-2117051038<?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
+        <h1>Aprilia Anggun Sari Rahmawatii-2117051038<?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
 
         <h2>The small framework with powerful features</h2>
 
